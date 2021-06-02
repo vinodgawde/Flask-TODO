@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %} 
+{% block body %}
+<style>
+    
+
+</style>
+<div>
+<section id="home">
+    <h1 class="h-primary" style="text-align:center" >About Us</h1>
+    <h2 style="text-align:center"></h2>
+    <div id="column">
+        <div id="card">
+            <img class="none" src="{{url_for('static', filename='img/abc.jpeg') }}"  alt="Vinod Gawde">
+            <div class="container">
+                <h2>Vinod Gawde</h2>
+                <p>Web Designer</p>
+                <p>9930752192</p>
+                <p>7796gawde@gmail.com</p>
+                <div id="social">
+                    <a href="https://github.com/vinodgawde" target="_blank"><img src="{{url_for('static', filename='img/git.png') }}" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/vinod-gawde" target="_blank"><img src="{{url_for('static', filename='img/in.png') }}"
+                            alt="linkedin"></a>
+                </div>
+                <p><button class="button my-2">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock body %}
